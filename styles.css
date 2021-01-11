@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400&family=Yusei+Magic&display=swap');
+
+* {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+:root {
+    --primary-color: #f59e0b;
+    --secondary-color: #3b82f6;
+    --white: #fff;
+    --background: #444;
+    --background-dark: #333;
+    --gray: #ddd;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: var(--background);
+    color: var(--gray);
+}
+
+hr {
+    margin: 2rem 0rem;
+}
+
+.container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.container-center {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 350px;
+    margin: auto;
+}
+
+.link {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    color: var(--white);
+}
+
+.link-primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.link-secondary {
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.list-non-bullet {
+    list-style: none;
+}
+
+.list-item-inline {
+    display: inline;
+    padding: 0rem 0.5rem;
+}
+
+.navigation {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 2rem 0rem;
+}
+
+.navigation .link {
+    color: white;
+    padding: 0rem 0.2rem;
+}
+
+.nav-brand {
+    display: inline;
+    font-size: 1.5rem;
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+.nav-pills {
+    display: inline;
+    float: right;
+    font-size: 1.2rem;
+}
+
+.navigation .link-active {
+    color: var(--secondary-color);
+    font-weight: bolder;
+}
+
+.hero {
+    padding: 2rem 0rem;
+    text-align: center;
+}
+
+.hero-image {
+    max-width: 35rem;
+    display: block;
+    margin: auto;
+}
+
+.hero-heading {
+    padding-top: 1rem;
+    font-family: 'Yusei Magic', sans-serif;
+    font-size: 2.5rem;
+    color: var(--white);
+}
+
+.section {
+    padding: 2rem 0rem;
+    text-align: center;
+}
+
+.section-dark {
+    background-color: var(--background-dark);
+    padding: 2rem 0rem;
+    text-align: center;
+}
+
+.section-heading {
+    color: var(--white);
+    font-size: 1.7rem;
+}
+
+.footer {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 1.5rem 0rem;
+}
+
+.footer-header {
+    color: var(--white);
+    font-size: 1.2rem;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+}
+
+.footer ul {
+    padding-inline-start: 0px;
+}
