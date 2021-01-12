@@ -37,16 +37,20 @@ hr {
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
     color: var(--white);
+    box-sizing: border-box;
+    max-width: 8rem;
 }
 
 .link-primary {
     background-color: var(--primary-color);
     color: white;
+    display: block;
 }
 
 .link-secondary {
     color: var(--primary-color);
     border: 1px solid var(--primary-color);
+    display: block;
 }
 
 .list-non-bullet {
@@ -107,7 +111,7 @@ hr {
     color: var(--white);
 }
 
-.hero-heading span {
+.heading-inverted {
     color: var(--primary-color);
 }
 
@@ -124,6 +128,18 @@ hr {
     color: var(--white);
     font-size: 1.7rem;
     text-align: center;
+}
+
+.section-dark div h3 {
+    color: var(--white);
+    font-size: 1.5rem;
+    margin-bottom: 0.7rem;
+}
+
+.section div h3 {
+    color: var(--white);
+    font-size: 1.5rem;
+    margin-bottom: 0.7rem;
 }
 
 .footer {
