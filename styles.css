@@ -1,12 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400&family=Yusei+Magic&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&family=Yusei+Magic&display=swap');
 :root {
-    --primary-color: #f59e0b;
+    --primary-color: #ffa500;
     --secondary-color: #3b82f6;
     --white: #fff;
-    --background: #444;
+    --background: #222;
     --background-dark: #333;
-    --gray: #ddd;
+    --gray: #aaa;
 }
 
 body {
@@ -28,7 +27,7 @@ hr {
 .container-center {
     padding-left: 1rem;
     padding-right: 1rem;
-    max-width: 500px;
+    max-width: 700px;
     margin: auto;
 }
 
@@ -62,39 +61,54 @@ hr {
     padding: 0rem 0.5rem;
 }
 
-.navigation {
-    background-color: var(--primary-color);
-    color: white;
-    padding: 2rem 0rem;
-    margin-top: 0;
+.nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 5rem;
+    background-color: #131313;
+    box-shadow: 0 2.8px 20px rgba(0, 0, 0, 0.2);
+    z-index: 2; /* to make sure its always above other elements */
+    align-items: center;
 }
 
-.navigation .link {
-    color: white;
-    padding: 0rem 0.2rem;
+.nav-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
 }
 
-.nav-brand {
-    margin-left: 0.5rem;
-    display: inline;
-    font-size: 1.5rem;
-    font-family: 'Yusei Magic', sans-serif;
+.logo a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 1.6rem;
 }
 
-.nav-pills {
-    display: inline;
-    float: right;
+.nav .links a {
+    text-decoration: none;
+    color: #aaa;
     font-size: 1.2rem;
+    margin: 0 0.5rem;
+    padding: 1rem;
+    border-bottom: 2px solid transparent;
 }
 
-.navigation .link-active {
-    color: var(--secondary-color);
-    font-weight: bolder;
+.nav .links a:hover {
+    /* background-color: #eee; */
+    /* border-radius: 4px; */
+    color: var(--primary-color);
 }
 
 .hero {
     padding: 2rem 0rem;
     text-align: center;
+    max-width: 700px;
+    margin: auto;
 }
 
 .hero-image {
@@ -102,6 +116,7 @@ hr {
     max-width: 30rem;
     display: block;
     margin: auto;
+    margin-top: 3rem;
 }
 
 .hero-heading {
@@ -119,7 +134,7 @@ hr {
     padding: 2rem 0rem;
 }
 
-.section-dark {
+.section-light {
     background-color: var(--background-dark);
     padding: 2rem 0rem;
 }
@@ -130,7 +145,7 @@ hr {
     text-align: center;
 }
 
-.section-dark div h3 {
+.section-light div h3 {
     color: var(--white);
     font-size: 1.5rem;
     margin-bottom: 0.7rem;
@@ -157,4 +172,21 @@ hr {
 
 .footer ul {
     padding-inline-start: 0px;
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 0.8rem;
+    }
+    .nav .links a {
+        font-size: 1.2rem;
+        margin: 0 0.3rem;
+        padding: 0.1rem;
+    }
+    .logo a {
+        font-size: 1.2rem;
+    }
+    .hero-image {
+        max-width: 25rem;
+    }
 }
