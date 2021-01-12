@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400&family=Yusei+Magic&display=swap');
 
-* {
-    margin-left: 0;
-    margin-right: 0;
-}
-
 :root {
     --primary-color: #f59e0b;
     --secondary-color: #3b82f6;
@@ -18,6 +13,7 @@ body {
     font-family: 'Lato', sans-serif;
     background-color: var(--background);
     color: var(--gray);
+    margin: 0px;
 }
 
 hr {
@@ -32,7 +28,7 @@ hr {
 .container-center {
     padding-left: 1rem;
     padding-right: 1rem;
-    max-width: 350px;
+    max-width: 500px;
     margin: auto;
 }
 
@@ -66,6 +62,7 @@ hr {
     background-color: var(--primary-color);
     color: white;
     padding: 2rem 0rem;
+    margin-top: 0;
 }
 
 .navigation .link {
@@ -74,6 +71,7 @@ hr {
 }
 
 .nav-brand {
+    margin-left: 0.5rem;
     display: inline;
     font-size: 1.5rem;
     font-family: 'Yusei Magic', sans-serif;
@@ -96,7 +94,8 @@ hr {
 }
 
 .hero-image {
-    max-width: 35rem;
+    padding-top: 3rem;
+    max-width: 30rem;
     display: block;
     margin: auto;
 }
@@ -108,20 +107,23 @@ hr {
     color: var(--white);
 }
 
+.hero-heading span {
+    color: var(--primary-color);
+}
+
 .section {
     padding: 2rem 0rem;
-    text-align: center;
 }
 
 .section-dark {
     background-color: var(--background-dark);
     padding: 2rem 0rem;
-    text-align: center;
 }
 
 .section-heading {
     color: var(--white);
     font-size: 1.7rem;
+    text-align: center;
 }
 
 .footer {
