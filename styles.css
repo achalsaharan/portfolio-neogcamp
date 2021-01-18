@@ -157,6 +157,13 @@ hr {
     margin-bottom: 0.7rem;
 }
 
+.blog-heading {
+    padding-top: 1rem;
+    font-family: 'Yusei Magic', sans-serif;
+    font-size: 1.7rem;
+    color: var(--white);
+}
+
 .footer {
     background-color: var(--primary-color);
     text-align: center;
